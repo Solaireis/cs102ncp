@@ -9,26 +9,13 @@ using namespace std;
 
 // Write implementation prototypes Here
 void solve(){
-    // PRINT THE ANSWER!
-    int num;
-    cin >> num;
-
-    // make array
-    vector <int> a(num+1);
-    for (int i = 0; i < num; i++){
-        cin >> a[i];
-    }
-    
-    int x;
-    cin >> x;
-    for (int i = 0; i < num; i++){
-        if (a[i] == x){
-            cout << "Yes" << endl; 
-            return;
-        }
-
-    }
+    int n; cin >> n;
+    vector<int> a(n+1); 
+    for (int i = 1; i <= n; ++i) cin >> a[i];
+    int x; cin >> x;
+    for (int i = 1; i <= n; ++i) if (a[i] == x) {cout << "Yes" << endl; return;}
     cout << "No" << endl;
+    
 }
 // Driver code
 int main(){
@@ -41,7 +28,7 @@ int main(){
     }
 
     ll test_cases = 1;
-   // cin >> test_cases;
+    // cin >> test_cases;
     for(int i = 0; i < test_cases; ++i){
         solve();
     }
