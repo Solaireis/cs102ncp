@@ -1,7 +1,20 @@
 public class Q1 {
-    
+
     public static int sumOfDigits(int number) {
-        return -1;
+        int result = 0;
+        //Boolean isNegative = false;
+        if (number < 0){
+            number = number * -1;
+            //isNegative = true;
+        }
+        while(number > 0){
+            result = result + number % 10;
+            number = number /10;
+        }
+
+        
+
+        return result;
     }
     public static void main(String[] args) {
         System.out.println("Test 1");

@@ -5,11 +5,18 @@ public class Demo9 {
             // string to <primitive>
             String s1 = "true";
             String s2 = "123";
+            System.out.println(Boolean.parseBoolean(s1));
+            System.out.println(Integer.parseInt(s2)); // class Integer
+
         }
         {   // <primitive> to string>
             int x = 123;
             boolean b = true;
-            
+           //System.out.println(Integer.parseInt(s2)); // class Integer 
+           System.out.println(String.valueOf(x)); // class Integer
+           System.out.println(String.valueOf(b)); // class Integer
+           System.out.println("" + x); // class Integer
+           System.out.println("" + b); // class Integer
         }
 
 

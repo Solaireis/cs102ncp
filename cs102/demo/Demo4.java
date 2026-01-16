@@ -21,7 +21,16 @@ public class Demo4 {
             short x = 2;
             short y = 3;
             double d = 12.3;
-            
+            //short j = x + y; //the values of x and y are promoted to int || long + long = long
+            int total = x + y;
+            total = 0;
+            total = 'a' + 1;
+            System.out.println(total);
+
+            long abc = 1;
+            short abc2 = 2;
+            long totalLong =  abc + abc2;
+            System.out.println(totalLong); //short is promoted to a long, so it promotes whenever there is a length which is longer
         }
 
         // shorthand notation

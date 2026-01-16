@@ -17,9 +17,10 @@ public class Demo6 {
         // indexOf
         // lastIndexOf
         {
-            String s1 = "abcdef";
+            String s1 = "abcdefcd";
             String needle = "cd";
             System.out.printf("\"%s\".indexOf(%s) = %s\n", s1, needle, s1.indexOf(needle));
+            System.out.printf("\"%s\".lastIndexOf(%s) = %s\n", s1 , needle, s1.lastIndexOf(needle));
             System.out.println("");
         }
 
@@ -66,7 +67,7 @@ public class Demo6 {
         {
             String s1 = "abc";
             String s2 = "abc";
-            String s3 = "ABC";
+            String s3 = "ABC"; //s1 == s2 (WRONG)
             System.out.printf("\"%s\".equals(\"%s\") = %b%n", s1, s2, s1.equals(s2));
             System.out.printf("\"%s\".equalsIgnoreCase(\"%s\") = %b%n", s2, s3, s2.equalsIgnoreCase(s3));   
             System.out.println();
