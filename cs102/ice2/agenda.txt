@@ -1,0 +1,19 @@
+At the end of this lesson, you should be able to:
+1. Declare instance attributes with appropriate access modifiers 
+   (private vs. public) and predict their default values.
+2. Differentiate between the memory allocation of primitive types 
+   and reference types (including the significance of null).
+3. Implement constructors, including the use of the this keyword 
+   to resolve shadowing. 
+4. Contrast the behavior of a compiler-generated no-arg constructor 
+   versus a user-defined constructor. 
+5. Execute object instantiation using the new keyword and 
+   assign the resulting reference to a variable. 
+6. Develop instance methods to define object behavior and invoke 
+   them using dot notation. 
+7. Compare and contrast the output of printing an object reference 
+   directly versus calling the .toString() method. 
+8. Justify the use of the static keyword for variables and methods 
+   in specific programming scenarios. 
+9. Interpret the Java API documentation to identify necessary 
+   constructors and method signatures for a given class. 

@@ -1,0 +1,66 @@
+1. Variable Types vs Object Types
+2. instanceof and casting
+3. java.lang.Object (equals,clone, toString)
+4. Abstract methods vs empty methods
+5. Abstract class - UML diagram
+6. Interface: methods and attributes
+7. Interface - Use of the implements
+8. Interface/Abstract class as data Types
+9. Comparison between Abstract class vs Interface
+10. Comparator vs Comparable
+11. static methods are never inherited.
+
+-----------------------------
+Inheritance 7: Variable types and Object types
+1. Understand that Java is a strongly typed language and that both variables and 
+   instances have types.
+2. Understand that it is possible for a variable of superclass type to be able to 
+   store the address of an object of child class type (but not the other way round). 
+   You cannot use that variable to call a method defined in the child class though, 
+   unless that method already exists in the super class.
+
+Inheritance 8: instanceof and Class Casting
+1. Use the “instanceof” operator/keyword in Java to check if an instance is of a 
+   particular type or NOT of a particular type
+2. Perform class casting using the cast operator () in order to call the methods of 
+   an object that is being referred to by a variable of its super class.
+
+Inheritance 9: Overriding equals
+1. Understand why you may want to override the equals method inherited from 
+   java.lang.Object to provide “custom” equality comparison
+2. (Read the slides) Able to provide the correct overriding code for the 
+   toString and clone methods.
+
+Inheritance 10: Abstract methods
+1. Know that methods can be categorized as concrete methods and abstract methods
+2. Understand the implications when a method is declared abstract
+3. Understand the difference between an “empty” method body (as in the case of a 
+   concrete method with no statements between the opening and closing curly braces) 
+   and no method body (as in the case of an abstract method)
+4. Know that abstract methods can only exist in an abstract class (not a concrete class)
+
+Inheritance 11: Abstract classes
+1. Know that an abstract class cannot be instantiated but may contain both abstract 
+   or/& concrete methods
+2. Abstract classes are also new data types. (Declare a variable of type abstract class)
+3. Understand that abstract method inherited to a child class must be overridden 
+   if you want the child class to be a concrete class, because concrete classes 
+   cannot contain abstract methods.
+4. Be able to depict an abstract class or method in a UML diagram by italicizing 
+   the class/method names.
+
+Inheritance 12: Interfaces
+1. Use the “interface” keyword to declare an interface. Use the “implements” keyword 
+   to implement an interface.
+2. Be able to depict an interface in a UML class diagram by using the “<<interface>>” 
+   stereotype.  Be able to depict “implementing” an interface using the dotted-line 
+   arrow in a UML diagram.
+3. Understand that you cannot instantiate an interface, but you can declare a variable 
+   of the interface type
+4. Understand that a class can implement any number of interfaces, and the implications 
+   of implementing an interface for the child class.
+5. Be able to do a comparison between interfaces and abstract classes
+6. Know that all methods in an interface are implicitly public and abstract 
+   (even if you don’t declare them using these keywords)
+7. Know that all attributes in an interface are implicitly public, static and 
+   final (even if you don’t declare them using these keywords)

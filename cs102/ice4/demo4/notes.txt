@@ -1,0 +1,21 @@
+demo4
+ |- given
+ |  |- com
+ |  |  |- example
+ |  |  |  |- entity
+ |  |  |  |  |- Person.java
+ |
+ |- src
+ |  |- com
+ |  |  |- example
+ |  |  |  |- start
+ |  |  |  |  |- Test.java
+ 
+javac -d classes -cp src src/com/example/start/Test.java -cp given given/com/example/entity/Person.java 
+java -d classes src/com/example/start/Test.java given/com/example/entity/Person.java 
+
+
+Because given already has the com.example.entity
+we can do this
+
+javac -d classes -cp given src/com/example/start/Test.java 

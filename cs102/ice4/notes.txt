@@ -1,0 +1,21 @@
+Objectives
+- describe the purpose of classpath
+- understand how java/javac uses the classpath 
+- Use of -cp or -classpath in java/javac
+- Use of separate directories for classes and java files
+- Use of -d switch in javac
+- describe the purpose of package
+- representation of packages in UML diagram
+- packages and its linkage with physical folders
+
+
+Fully Qualified Names: https://docs.oracle.com/javase/specs/jls/se25/html/jls-6.html#jls-6.7
+ 
+ Compile the source code into classes
+ 
+ javac -d classes -cp src src/start/Test.java 
+
+ javac -cp src 
+ -cp indicates the starting point which would be traversed
+ based on the code itself 
+ 

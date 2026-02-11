@@ -1,0 +1,2 @@
+javac -cp "src:ticketing.jar" src/ticketing/test/TicketUtilityTest.java -d classes
+java -cp "classes:ticketing.jar" ticketing.test.TicketUtilityTest

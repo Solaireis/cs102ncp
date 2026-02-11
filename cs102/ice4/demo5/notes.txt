@@ -1,0 +1,4 @@
+jar -tf lib/example.jar
+javap -cp lib/example.jar entity.Person
+javac -d output -cp "lib/example.jar" src/Test.java
+java -cp "lib/example.jar:output" Test

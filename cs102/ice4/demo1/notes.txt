@@ -1,0 +1,28 @@
+cd - change directory 
+.. - go up one directory
+
+ls - show directory
+
+ls -la show verbose 
+
+dir - show current directory in windows/ powershell terminal 
+
+javac -cp classpath flag
+
+e.g.
+
+java -cp demo1 Test
+
+look for the test file in the demo1 subdirectory 
+make sure to use java not javac
+
+java -cp dir:dir test
+
+if youre on windows use wsl/mac
+
+-cp dir:dir
+
+if youre on windows cmd/powershell
+
+-cp dir;dir
+use semicolon

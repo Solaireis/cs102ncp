@@ -1,0 +1,6 @@
+jar -tf lib/entity.jar
+javap -cp lib/entity.jar com.example.entity.Person
+javac -d output -cp "lib/entity.jar" src/start.Test.java
+java -cp "lib/entity.jar:output" start.Test
+
+// because start here is a package

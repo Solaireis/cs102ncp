@@ -1,0 +1,30 @@
+Objectives
+- describe the purpose of classpath
+- understand how java/javac uses the classpath 
+- Use of -cp or -classpath in java/javac
+- Use of separate directories for classes and java files
+- Use of -d switch in javac
+- describe the purpose of package
+- representation of packages in UML diagram
+- packages and its linkage with physical folders
+
+
+Fully Qualified Names: https://docs.oracle.com/javase/specs/jls/se25/html/jls-6.html#jls-6.7
+
+
+Compile the file
+javac com/example/alpha/Test.java
+javac com/example/beta/Test.java
+
+Execute the file
+java -cp com/example/alpha Test
+java -cp com/example/beta Test
+
+Only execute the first entry it finds
+java -cp com/example/beta:com/example/alpha Test
+
+It will execute beta because thats the first directory it found
+Search from the left to the right Directory, look into directory 2
+    D1:D2:D3 
+So these is what it would search
+
